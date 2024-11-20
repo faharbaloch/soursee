@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "serviceinfos",
+  "info": {
+    "singularName": "serviceinfo",
+    "pluralName": "serviceinfos",
+    "displayName": "serviceinfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

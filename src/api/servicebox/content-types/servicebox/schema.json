@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "serviceboxes",
+  "info": {
+    "singularName": "servicebox",
+    "pluralName": "serviceboxes",
+    "displayName": "servicebox"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

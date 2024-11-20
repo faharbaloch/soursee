@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage_image_and_texts",
+  "info": {
+    "singularName": "homepage-image-and-text",
+    "pluralName": "homepage-image-and-texts",
+    "displayName": "Homepage Image And Text"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "blocks"
+    },
+    "img1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
