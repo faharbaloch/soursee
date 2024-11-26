@@ -1,17 +1,20 @@
 module.exports = [
+  'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['http://localhost:3000'], // Replace with your React frontend domain
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+      headers: ['Content-Type', 'Authorization'],
+      keepHeaderOnError: true,
+    },
+  },
   'strapi::poweredBy',
-  'strapi::logger',
   'strapi::query',
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-  // Register the custom middleware
-  {
-    name: 'request-logger',
-    config: {}, // Pass configuration if needed
-  },
 ];
