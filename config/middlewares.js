@@ -2,15 +2,7 @@ module.exports = [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  { 
-    name: 'strapi::cors',
-    config: {
-      origin: ['*'], // Replace with your React frontend domain
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      headers: ['Content-Type', 'Authorization'],
-      keepHeaderOnError: true,
-    },
-  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
